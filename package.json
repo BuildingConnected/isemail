@@ -1,8 +1,8 @@
 {
-  "name": "isemail",
+  "name": "@buildingconnected/isemail",
   "description": "Validate an email address according to RFCs 5321, 5322, and others",
   "version": "2.1.2",
-  "repository": "git://github.com/hapijs/isemail",
+  "repository": "git://github.com/buildingconnected/isemail",
   "main": "lib/index.js",
   "keywords": [
     "isemail",

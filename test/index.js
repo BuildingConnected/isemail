@@ -133,17 +133,6 @@ describe('validate()', () => {
         done();
     });
 
-    it('should ensure callback provided with checkDNS', (done) => {
-
-        expect(() => {
-
-            Isemail.validate('person@top', {
-                checkDNS: true
-            });
-        }).to.throw(/(?=.*\bcheckDNS\b)(?=.*\bcallback\b)/);
-        done();
-    });
-
     it('should handle omitted options', (done) => {
 
         expect(Isemail.validate(expectations[0][0])).to.equal(expectations[0][1] < internals.defaultThreshold);
@@ -167,7 +156,7 @@ describe('validate()', () => {
 
             Isemail.validate(email, {
                 errorLevel: 0,
-                checkDNS: true
+                checkDNS: false
             }, (res) => {
 
                 expect(res).to.equal(result);
