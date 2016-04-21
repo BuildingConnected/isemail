@@ -4,7 +4,7 @@
 
 const Lab = require('lab');
 const Code = require('code');
-const Isemail = require('..');
+const Isemail = require('../lib/original');
 const Tests = require('./tests.json');
 
 
